@@ -26,7 +26,10 @@ struct ContentView: View {
             
             // Input
             Button(action: {
-                isAnswerShowing = true
+                withAnimation {
+                    isAnswerShowing = true
+                }
+                
             }, label: {
                 Text("Check")
             })
