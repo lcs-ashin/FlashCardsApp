@@ -10,7 +10,11 @@ import SwiftUI
 struct ContentView: View {
     
     // MARK: Stored Properties
+    // This is the card we are currently quizzing on
     @State var currentCard: Card = listOfCards.randomElement()!
+    
+    // This controls whether the answer is visible
+    @State var isAnswerShowing = false
     
     // MARK: Computed Properties
     var body: some View {
@@ -31,6 +35,8 @@ struct ContentView: View {
             // Output
             Text(currentCard.answer)
                 .font(.title)
+                // Condition            True  False
+                .opacity(isAnswerShowing ? 1.0 : 0.0)
             
             // Input
             Button(action: {
@@ -39,6 +45,8 @@ struct ContentView: View {
                 Text("Another")
             })
                 .buttonStyle(.bordered)
+            // Condition            True  False
+            .opacity(isAnswerShowing ? 1.0 : 0.0)
             
             Spacer()
             
