@@ -16,7 +16,7 @@ struct Card {
 
 let listOfCards = [
     
-    Card(question: "What's \"powerhouse\" of a cell",
+    Card(question: "What's \"powerhouse\" of a cell?",
          answer: "mitochondria")
     
     ,
