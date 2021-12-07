@@ -14,7 +14,7 @@ struct Card {
     
 }
 
-let listOfCards = {
+let listOfCards = [
     
     Card(question: "What's \"powerhouse\" of a cell",
          answer: "mitochondria")
@@ -28,4 +28,4 @@ let listOfCards = {
     
     Card(question: "What is acceleration due to gravity?",
          answer: "9.80 m/s squared")
-}
+]
